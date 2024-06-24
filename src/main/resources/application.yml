@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: NIMESA-SERVICE
+  datasource:
+    url: jdbc:mysql://localhost:3306/assignment_db
+    username: root
+    password: kiran
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+  server:
+    port: 9090
+
+cloud:
+  aws:
+    static:
+      region: ap-south-1
+    credentials:
+      accessKeyId: AKIAX5XSI5UT4M674AFL
+      secretKey: SEUYFy4LLDLvDG184IP2qM+PE/NFmi5MUCH3Wf7I
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+    com.yourpackage: DEBUG
