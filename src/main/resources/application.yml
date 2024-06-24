@@ -21,8 +21,8 @@ cloud:
     static:
       region: ap-south-1
     credentials:
-      accessKeyId: AKIAX5XSI5UT4M674AFL
-      secretKey: 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
+      accessKeyId: 
+      secretKey: 
 
 logging:
   level:
