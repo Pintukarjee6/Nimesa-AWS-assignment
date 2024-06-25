@@ -23,8 +23,6 @@ public class AwsConfig {
 
     @Bean
     public Ec2Client ec2Client() {
-        System.out.println("AWS Access Key ID: " + accessKeyId);
-        System.out.println("AWS Secret Key: " + secretKey);
         return Ec2Client.builder()
                 .region(Region.of(region))
                 .credentialsProvider(StaticCredentialsProvider.create(AwsBasicCredentials.create(accessKeyId, secretKey)))
