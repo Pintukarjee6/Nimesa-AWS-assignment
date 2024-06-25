@@ -1,4 +1,4 @@
-2. The application will start running on `http://localhost:8080`.
+The application will start running on `http://localhost:8080`.
 
 ## API Endpoints
 The application provides the following API endpoints:
